@@ -1,0 +1,57 @@
+Capstone Project-1 Summary
+Organizations are facing increased supply chain costs and competitive pressures. Caterpillar, who manufactures construction equipment requires 10,000 different styles of tube assemblies supplied by 57 different suppliers. Some suppliers carry just one type of assembly while others carry many depending upon their length of the contract. Furthermore, slight difference in specifications such as bend radius, length, weight, order quantity and so on, the tube assembly price can vary and so it becomes difficult to identify which assemblies we buy them in bulk and whom should we be buying it from so as to realize best business savings? 
+Hence, the primary goal of this project was to be able to gather actionable business insights and which in return help us optimize supply chain performance and contribute to operational sustainability.    
+Here are the two basic questions we will try to answer:
+1.	Would it possible to build a model that can learn from our previous organizational spend and help us predict supplier pricing based on different specification?   Can we use historical spend as a basis to predict supplier pricing?
+2.	Since, we have so many different suppliers and assemblies, would it be possible to categorize them and see which assemblies and suppliers best meets our business needs? 
+As always, my first step in this project started with gathering few public datasets and then qualifying which dataset will help us answer these questions. I chose Caterpillar because I felt the connection. There were 21 tables which had to be connected to preserve the most relevant features for our modelling.  We wrangled the data, developed new features as well as dropped fields to make the most from 23% of the entire dataset. 
+Please see below highlights of our project findings. I have used Jupyter Notebook to ask questions and prepare the code.  You will observe visuals as well as observations along the way to unfold hidden insights. 
+Section1: Supplier Pricing Prediction:
+1)	After comparing few different models, ensemble algorithm was able to predict supplier pricing with more than 98% accuracy and least RMSE error.
+
+2)	Supplier pricing is dependent on product specifications, annual volume and type of contract pricing offered. Cost Vs Weight/Length/Dimeter etc.
+
+
+
+3)	Because cost is dependent upon weight of the assembly, so which components make our assemblies expensive as well as heavy. 
+
+
+
+Section 2:  Assembly and Supplier Categorization:
+1)	Using domain experience, I anticipated needs of our business users and established pre-categorization criteria example how recent was our purchase, how often we buy, what is the total spend we have per assembly etc, I built the model to pre-analyze our portfolio first. 
+2)	Then applied clustering algorithm to group suppliers and assemblies based on pre-established criteria. Example supplier rebate, length of contract etc.
+3)	Using visuals, was able to benchmark assembly and supplier groups that manage significant spend, offer most rebate and have highest business preference when compared to others.
+
+a)	Best Managed Assembly Category: Cluster 0
+
+b)	Best Managed Suppliers: Supplier Cluster 2 
+
+Future Possibilities: 
+1)	Add additional features in the model such on time delivery, safety performance, contract compliance and inventory to further understand supplier performance. 
+2)	Develop ETL pipeline to see supply chain performance in real-time.  
+3)	Use time series modelling to predict future supplier pricing. 
+
+For detailed notebook, please refer to notebook link below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										Prashant Sanghal
+
+
